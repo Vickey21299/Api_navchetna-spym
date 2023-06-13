@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">navchenta_welcome</string>
+    <string name="title_activity_scrolling_singup">Scrolling_singup_Activity</string>
+    <string name="singup">
+        Dont have account ? <u><font color='#FF0000'>Sing Up</font></u>
+    </string>
+    <string name="large_text">
+        zsdxfghuijnb dnklfhbdnserklfcji;fnvj xcfgvbiuonj e5rcvbo;n fxcvbknlm fghjkl dxfcgvbkj
+        fcgvhbjnk hvbjnkm gvhbnkml,
+    </string>
+    <string name="action_settings">Settings</string>
+</resources>
