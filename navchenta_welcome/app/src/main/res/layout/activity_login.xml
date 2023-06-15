@@ -9,6 +9,7 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".login">
+
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -42,6 +43,7 @@
                         android:textColor="#DF9D4A"
                         android:textSize="36dp"
                         android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -114,6 +116,7 @@
                         android:textColor="#DF9D4A"
                         android:textSize="36dp"
                         android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -160,6 +163,7 @@
 
         </LinearLayout>
     </HorizontalScrollView>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
