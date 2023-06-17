@@ -142,7 +142,7 @@
                     />
 
                 <EditText
-                    android:id="@+id/editTextTextEmailAddress2"
+                    android:id="@+id/your_email"
                     android:layout_width="328dp"
                     android:layout_height="48dp"
                     android:layout_marginTop="10dp"
@@ -180,7 +180,7 @@
                     />
 
                 <EditText
-                    android:id="@+id/editTextTextPassword2"
+                    android:id="@+id/set_passward"
                     android:layout_width="328dp"
                     android:layout_height="48dp"
                     android:layout_marginTop="10dp"
@@ -191,13 +191,14 @@
                     android:textColor="@color/black" />
 
                 <Button
+                    android:id="@+id/singup"
                     android:layout_width="219dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="50dp"
                     android:backgroundTint="@color/black"
-                    android:text="Update"
+                    android:text="Sign Up"
                     app:cornerRadius="10dp" />
             </LinearLayout>
         </ScrollView>
