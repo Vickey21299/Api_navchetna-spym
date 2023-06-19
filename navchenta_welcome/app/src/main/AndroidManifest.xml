@@ -13,24 +13,27 @@
         android:theme="@style/Theme.Navchenta_welcome"
         tools:targetApi="31">
         <activity
-            android:name=".Sing_up1"
-            android:exported="true" >
-
+            android:name=".home"
+            android:exported="false" >
         </activity>
         <activity
+            android:name=".Sing_up1"
+            android:exported="true"></activity>
+        <activity
             android:name=".Sing_up"
-            android:exported="true">
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".login"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">  <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
 
         <meta-data

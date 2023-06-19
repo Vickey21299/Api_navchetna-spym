@@ -2,7 +2,7 @@
     <string name="app_name">navchenta_welcome</string>
     <string name="title_activity_scrolling_singup">Scrolling_singup_Activity</string>
     <string name="singup">
-        Dont have account ? <u><font color='#FF0000'>Sing Up</font></u>
+        Do not have account ? <u><font color='#1E2F97'>Sign Up</font></u>
     </string>
     <string name="large_text">
         zsdxfghuijnb dnklfhbdnserklfcji;fnvj xcfgvbiuonj e5rcvbo;n fxcvbknlm fghjkl dxfcgvbkj
@@ -12,4 +12,6 @@
     <string name="question1">
         who is the fuckking dog ? answer pourav <u><font color='#FF0000'>lakshay</font></u>
     </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
