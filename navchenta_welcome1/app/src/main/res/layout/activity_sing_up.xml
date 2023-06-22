@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iphone_6__7__8_plus___1"
+    android:orientation="vertical"
+    tools:context=".Sing_up">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="Sign up"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Please sign up to connect us"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextText2"
+                android:layout_width="328dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/custom_rectangular_loop"
+                android:hint="Name"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextNumberDecimal2"
+                android:layout_width="328dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_rectangular_loop"
+                android:hint="Age"
+                android:inputType="numberDecimal"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="328dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_rectangular_loop"
+                android:ems="10"
+                android:hint="Your Ph no."
+                android:inputType="phone"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/editTextText2" />
+
+            <EditText
+                android:id="@+id/editTextText3"
+                android:layout_width="328dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_rectangular_loop"
+                android:ems="10"
+                android:hint="Gender"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextPhone4"
+                android:layout_width="328dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_rectangular_loop"
+                android:hint="Phone no of School"
+                android:inputType="phone"
+                android:minHeight="64dp"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="328dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_rectangular_loop"
+                android:hint="email of  School"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextTextPostalAddress"
+                android:layout_width="333dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_rectangular_loop"
+                android:ems="10"
+                android:hint="Address of School"
+                android:inputType="textPostalAddress"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/your_email"
+                android:layout_width="328dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_rectangular_loop"
+                android:hint="your Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextText5"
+                android:layout_width="328dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_rectangular_loop"
+                android:ems="10"
+                android:hint="State"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextText6"
+                android:layout_width="328dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_rectangular_loop"
+                android:ems="10"
+                android:hint="District"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/set_passward"
+                android:layout_width="328dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_rectangular_loop"
+                android:hint="Set Password"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="219dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="@color/black"
+                android:text="Sign Up"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/go_to_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Already have account ? login"
+        android:textAlignment="center" />
+</LinearLayout>
