@@ -1,5 +1,6 @@
 package com.example.navchenta_welcome
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,11 +16,27 @@ class Sing_up : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sing_up)
         val update_btn = findViewById<Button>(R.id.signup)
+            var go_to_login =findViewById<TextView>(R.id.go_to_login)
+
+
+
+
 
         update_btn.setOnClickListener {
-            val intent = Intent(this, login::class.java)
+                val intent = Intent(this, login::class.java)
 //            intent.putExtra("USER", enteredName)
-            startActivity(intent)
-        }
+                startActivity(intent)
+            }
+
+            go_to_login.setOnClickListener {
+                val intent = Intent(this, login::class.java)
+//            intent.putExtra("USER", enteredName)
+                startActivity(intent)
+
+            }
+        val sharedPreferences = getSharedPreferences("navchenta_welcome1", Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putBoolean("isLoggedIn", true)
+        editor.apply()
     }
 }

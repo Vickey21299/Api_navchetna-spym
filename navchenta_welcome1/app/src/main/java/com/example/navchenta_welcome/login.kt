@@ -1,5 +1,6 @@
 package com.example.navchenta_welcome
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -32,32 +33,6 @@ class login : AppCompatActivity() {
         var go_to_signup=findViewById<TextView>(R.id.go_to_singup)
         enteredName = email_text.text.toString()
 
-//
-//        val drawerLayout: DrawerLayout =findViewById(R.id.drawerLayout)
-//        val navView: NavigationView = findViewById(R.id.nav_view)
-
-//        toggle = ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close)
-//        drawerLayout.addDrawerListener(toggle)
-//        toggle.syncState()
-//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-//        navView.setNavigationItemSelectedListener {
-//
-//            when(it.itemId){
-//
-//                R.id.nav_home -> Toast.makeText(applicationContext,"Clicked Home",Toast.LENGTH_SHORT).show()
-//                R.id.nav_message -> Toast.makeText(applicationContext,"Clicked Message",Toast.LENGTH_SHORT).show()
-//                R.id.nav_sync -> Toast.makeText(applicationContext,"Clicked Sync",Toast.LENGTH_SHORT).show()
-//                R.id.nav_trash -> Toast.makeText(applicationContext,"Clicked Delete",Toast.LENGTH_SHORT).show()
-//                R.id.nav_setting -> Toast.makeText(applicationContext,"Clicked Setting",Toast.LENGTH_SHORT).show()
-//                R.id.nav_Login -> Toast.makeText(applicationContext,"Clicked Login",Toast.LENGTH_SHORT).show()
-//                R.id.nav_share -> Toast.makeText(applicationContext,"Clicked Share",Toast.LENGTH_SHORT).show()
-//                R.id.nav_rate_us -> Toast.makeText(applicationContext,"Clicked Rate us",Toast.LENGTH_SHORT).show()
-//
-//            }
-//            true
-//        }
-
         login_btn.setOnClickListener {
             val intent = Intent(this, Drawer::class.java)
 //            intent.putExtra("USER", enteredName)
@@ -69,13 +44,17 @@ class login : AppCompatActivity() {
 //            intent.putExtra("USER", enteredName)
             startActivity(intent)
         }
+        // Inside LoginActivity onCreate()
+        val sharedPreferences = getSharedPreferences("navchenta_welcome1", Context.MODE_PRIVATE)
+        val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false)
 
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(toggle.onOptionsItemSelected(item)){
-            return true
+        if (isLoggedIn) {
+            // User is already logged in, start the home activity
+            val intent = Intent(this, Drawer::class.java)
+            startActivity(intent)
+            finish() // Finish the LoginActivity so the user can't go back to it
         }
-        return super.onOptionsItemSelected(item)
+
+
     }
 }
