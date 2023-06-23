@@ -45,14 +45,20 @@ class login : AppCompatActivity() {
             startActivity(intent)
         }
         // Inside LoginActivity onCreate()
-        val sharedPreferences = getSharedPreferences("navchenta_welcome1", Context.MODE_PRIVATE)
+        val sharedPreferences = getSharedPreferences("navchetna_welcome1", Context.MODE_PRIVATE)
         val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false)
+        val isAppInstalled = sharedPreferences.getBoolean("isAppInstalled", false)
 
-        if (isLoggedIn) {
-            // User is already logged in, start the home activity
-            val intent = Intent(this, Drawer::class.java)
+        if (isLoggedIn && isAppInstalled) {
+            // User is already logged in and the app is installed, start the home activity
+            val intent = Intent(this,Drawer::class.java)
             startActivity(intent)
             finish() // Finish the LoginActivity so the user can't go back to it
+        } else {
+            // Clear the login status if the app was uninstalled and relaunched
+            val editor = sharedPreferences.edit()
+            editor.putBoolean("isLoggedIn", false)
+            editor.apply()
         }
 
 

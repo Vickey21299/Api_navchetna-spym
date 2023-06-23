@@ -34,9 +34,10 @@ class Sing_up : AppCompatActivity() {
                 startActivity(intent)
 
             }
-        val sharedPreferences = getSharedPreferences("navchenta_welcome1", Context.MODE_PRIVATE)
+        val sharedPreferences = getSharedPreferences("navchetna_welcome", Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
         editor.putBoolean("isLoggedIn", true)
+        editor.putBoolean("isAppInstalled", true) // Store the flag indicating app installation
         editor.apply()
     }
 }
