@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".navigation.ui.about_us">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#F7F6FB">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/aboutus_icon_circle"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="background circle for pic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_circle_24" />
+
+                <ImageView
+                    android:id="@+id/aboutus_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/aboutus_icon_circle"
+                    app:layout_constraintEnd_toEndOf="@+id/aboutus_icon_circle"
+                    app:layout_constraintStart_toStartOf="@+id/aboutus_icon_circle"
+                    app:layout_constraintTop_toTopOf="@+id/aboutus_icon_circle"
+                    app:srcCompat="@drawable/baseline_person_24" />
+
+                <TextView
+                    android:id="@+id/title_aboutus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="About Us"
+                    android:textAlignment="center"
+                    android:textColor="#0E0E0E"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/aboutus_icon_circle" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_spym"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_aboutus">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/aboutus_spym_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="48dp"
+                            android:layout_marginTop="8dp"
+                            android:text="SPYM"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/aboutus_spym_description"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="@string/aboutus_spym"
+
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/aboutus_spym_title" />
+
+                        <ImageButton
+                            android:id="@+id/aboutus_spym_website_link"
+                            android:layout_width="49dp"
+                            android:layout_height="49dp"
+                            android:background="@drawable/instagram"
+                            android:contentDescription="@string/close"
+                            app:layout_constraintBottom_toBottomOf="@+id/aboutus_spym_YT_link"
+                            app:layout_constraintEnd_toStartOf="@+id/aboutus_spym_YT_link"
+                            app:layout_constraintHorizontal_bias="0.363"
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/aboutus_spym_YT_link"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:ignore="DuplicateSpeakableTextCheck" />
+
+                        <ImageButton
+                            android:id="@+id/aboutus_spym_YT_link"
+                            android:layout_width="49dp"
+                            android:layout_height="49dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/facebook"
+                            android:contentDescription="@string/app_name"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/aboutus_spym_description"
+                            app:layout_constraintHorizontal_bias="0.355"
+                            app:layout_constraintStart_toStartOf="@+id/aboutus_spym_description"
+                            app:layout_constraintTop_toBottomOf="@+id/aboutus_spym_description"
+                            app:layout_constraintVertical_bias="1.0"
+                            tools:ignore="DuplicateSpeakableTextCheck" />
+
+                        <ImageButton
+                            android:id="@+id/aboutus_spym_link3"
+                            android:layout_width="49dp"
+                            android:layout_height="49dp"
+                            android:background="@drawable/youtube"
+                            android:contentDescription="@string/app_name"
+                            app:layout_constraintBottom_toBottomOf="@+id/aboutus_spym_YT_link"
+                            app:layout_constraintEnd_toEndOf="@+id/aboutus_spym_description"
+                            app:layout_constraintHorizontal_bias="0.275"
+                            app:layout_constraintStart_toEndOf="@+id/aboutus_spym_YT_link"
+                            app:layout_constraintTop_toTopOf="@+id/aboutus_spym_YT_link"
+                            app:layout_constraintVertical_bias="0.0"></ImageButton>
+
+                        <ImageButton
+                            android:id="@+id/aboutus_spym_link4"
+                            android:layout_width="49dp"
+                            android:layout_height="49dp"
+                            android:background="@drawable/share"
+                            android:contentDescription="@string/app_name"
+                            app:layout_constraintBottom_toBottomOf="@+id/aboutus_spym_YT_link"
+                            app:layout_constraintEnd_toEndOf="@+id/aboutus_spym_description"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toEndOf="@+id/aboutus_spym_YT_link"
+                            app:layout_constraintTop_toTopOf="@+id/aboutus_spym_YT_link"
+                            app:layout_constraintVertical_bias="0.0"></ImageButton>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_iiitd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card_spym">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/aboutus_iiitd_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="48dp"
+                            android:layout_marginTop="8dp"
+                            android:text="IIIITDians"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/aboutus_iiitd_description"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:text="@string/Lorem_Ipsum"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/aboutus_iiitd_title" />
+
+                        <!--TODO : add the linked in ids of each of us-->
+                        <ImageButton
+                            android:id="@+id/aboutus_iiitd_id2"
+                            android:layout_width="49dp"
+                            android:layout_height="49dp"
+                            android:contentDescription="Linkedin ids of each member"
+                            app:layout_constraintEnd_toStartOf="@+id/aboutus_iiitd_id1"
+                            app:layout_constraintStart_toStartOf="@+id/aboutus_iiitd_description"
+                            app:layout_constraintTop_toTopOf="@+id/aboutus_iiitd_id1"
+                            app:srcCompat="@drawable/baseline_circle_24" />
+
+                        <ImageButton
+                            android:id="@+id/aboutus_iiitd_id1"
+                            android:layout_width="49dp"
+                            android:layout_height="49dp"
+                            android:layout_marginTop="8dp"
+                            android:contentDescription="@string/close"
+                            app:layout_constraintEnd_toEndOf="@+id/aboutus_iiitd_description"
+                            app:layout_constraintStart_toStartOf="@+id/aboutus_iiitd_description"
+                            app:layout_constraintTop_toBottomOf="@+id/aboutus_iiitd_description"
+                            app:srcCompat="@drawable/baseline_circle_24" />
+
+                        <ImageButton
+                            android:id="@+id/aboutus_iiitd_id3"
+                            android:layout_width="49dp"
+                            android:layout_height="49dp"
+                            android:contentDescription="@string/close"
+                            app:layout_constraintEnd_toEndOf="@+id/aboutus_iiitd_description"
+                            app:layout_constraintStart_toEndOf="@+id/aboutus_iiitd_id1"
+                            app:layout_constraintTop_toTopOf="@+id/aboutus_iiitd_id1"
+                            app:srcCompat="@drawable/baseline_circle_24" />
+
+                        <ImageButton
+                            android:id="@+id/aboutus_iiitd_id11"
+                            android:layout_width="49dp"
+                            android:layout_height="49dp"
+                            android:contentDescription="@string/close"
+                            app:layout_constraintBottom_toBottomOf="@+id/aboutus_iiitd_id10"
+                            app:layout_constraintEnd_toStartOf="@+id/aboutus_iiitd_id10"
+                            app:layout_constraintStart_toStartOf="@+id/aboutus_iiitd_description"
+                            app:layout_constraintTop_toTopOf="@+id/aboutus_iiitd_id10"
+                            app:srcCompat="@drawable/baseline_circle_24" />
+
+                        <ImageButton
+                            android:id="@+id/aboutus_iiitd_id10"
+                            android:layout_width="49dp"
+                            android:layout_height="49dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="32dp"
+                            android:contentDescription="@string/close"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/aboutus_iiitd_description"
+                            app:layout_constraintStart_toStartOf="@+id/aboutus_iiitd_description"
+                            app:layout_constraintTop_toBottomOf="@+id/aboutus_iiitd_id1"
+                            app:srcCompat="@drawable/baseline_circle_24" />
+
+                        <ImageButton
+                            android:id="@+id/aboutus_iiitd_id12"
+                            android:layout_width="49dp"
+                            android:layout_height="49dp"
+                            android:contentDescription="@string/close"
+                            app:layout_constraintBottom_toBottomOf="@+id/aboutus_iiitd_id10"
+                            app:layout_constraintEnd_toEndOf="@+id/aboutus_iiitd_description"
+                            app:layout_constraintStart_toEndOf="@+id/aboutus_iiitd_id10"
+                            app:layout_constraintTop_toTopOf="@+id/aboutus_iiitd_id10"
+                            app:srcCompat="@drawable/baseline_circle_24" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
