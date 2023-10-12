@@ -12,5 +12,6 @@ here is the home page
 final app-debug.apk file open it and install in your android phone.
 see apk file and bundle file here
 
-![image](https://github.com/Vickey21299/Api_navchetna-spym/assets/108173950/34d91019-8bba-4f4a-9914-75dca16b56f5)
+app-debug.apk
+
  
